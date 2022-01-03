@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SASS Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+       h1{color:blue;font-size:50px;display:block;width:250px;height:200px;background-color:red}h2{color:blue}.block{background-color:#000}.block h3{color:blue}.block_color{background-color:#fff}.block_color button{display:block;width:250px;height:200px;background-color:red}
+    </style> -->
+</head>
+
+<div class="menu">
+    <div class="menu__block">
+        <div class="menu__close">
+            <!-- <object type='image/svg+xml' data="../img/Close.svg"> -->
+            <img src='/img/Close.svg'>
+            <!-- </object> -->
+        </div>
+        <nav>
+            <ul class="menu__schedule">
+                <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+        <div class="menu__social-networks">
+            <a href="#">
+                <img src="/img/Github.svg" alt="github-icon">
+            </a>
+            <a href="#">
+                <img src="/img/Instagram-icon.svg" alt="instagram-icon">
+            </a>
+            <a href="#">
+                <img src="/img/vk-icon.svg" alt="vk-icon">
+            </a>
+        </div>
+    </div>
+    <div class="menu__overlay"></div>
+</div>
+
+<body>
+    <aside class="socialsidepanel">
+        <a href="#" class="socialsidepanel__link">
+            <img src="/img/github-icon-rotate.svg" alt="github-icon">
+        </a>
+        <a href="#" class="socialsidepanel__link">
+            <img src="/img/instagram-icon-rotate.svg" alt="instagram-icon">
+        </a><a href="#" class="socialsidepanel__link">
+            <img src="/img/vk-icon-rotate.svg" alt="vk-icon">
+        </a>
+        <div class="socialsidepanel__divider"></div>
+        <div class="socialsidepanel__text"><span>Социальные сети</span></div>
+    </aside>
+    <section class="header-block">
+        <div class="hamburger-menu">
+            <span></span>
+            <span class='long'></span>
+            <span></span>
+        </div>
+        <div class="container">
+            <div class="title title_person header-block__circle-elem">Меня зовут Маргарита Редун</div>
+            <h1 class="title subtitle_personal-info">Я начинающий разработчик из города Ростов-на-Дону</h1>
+            <div class='header-block__buttons'>
+                <a href="#" class="header-block__link-button">Портфолио</a>
+                <a href="#" class="header-block__link">Про меня</a>
+            </div>
+        </div>
+    </section>
+    <section class="main-content-block">
+        <div class='container'>
+            <div class="main-content-block__wrapper">
+                <div class="main-content-block__photo">
+                    <img src="img/myphoto.jpg" alt="myphoto">
+                </div>
+                <div class="main-content-block__about-me">
+                    <h2 class='title about_me main-content-block__circle-elem'>Про меня</h2>
+                    <div class='subtitle my_name'>Меня зовут Маргарита</div>
+                    <div class="divider"></div>
+                    <p class='main-contenct-block__content-about-me'>I'm a novice developer with six months of
+                        experience.
+                        Recently I've received a master's degree in applied mathematics and computer science and
+                        Now I'm a junior risk analyst in an international microfinance company.
+                        But I've been interested in web development for a long time, especially frontend and
+                        developed my own projects, such as weather widget, multi-user web chat, portfolio website.
+                        Also I'm fond of reading books, playing board games with friends in my free time.</p>
+                </div>
+                <div class="main-content-block__skills">
+                    <div class="main-content-block__skills-item">
+                    <div class='main-content-block__skills__circle-elem'>  
+                        <img src='img/web-dev-icon.svg' alt='web-dev'>
+                    </div>
+                        <div>
+                            <div class='title web-dev'>Web-разработка</div>
+                            <div class="main-content-block__skills__web-description">
+                                Developing SPA applications, mainly the client part
+                                using frontend technologies.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-block__skills-item">
+                        <div class='main-content-block__skills__circle-elem'>  
+                            <img src='img/graph.svg' alt='web-dev'>
+                        </div>
+                            <div>
+                                <div class='title web-dev'>Риск Аналитика</div>
+                                <div class="main-content-block__skills__web-description">
+                                    Searching of the client's microfinance indicators to reduce 
+                                    risks leading to financial losses of the company. Analysis of the 
+                                    impact of indicators such as delinquency, customer profitability, 
+                                    customer retention(RR), net present value(NPV),working with database, 
+                                    libraries for data processing and analysis.
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type='text/javascript' src='/scripts_js/header.js'> </script>
+</body>
+
+</html>
+
+
+
+
