@@ -311,6 +311,94 @@
 .main-experience-block {
   padding-top: 120px;
 }
+.main-experience-block__wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(425px, auto));
+  column-gap: 20px;
+}
+.main-experience-block__wrapper ul {
+  list-style-type: none;
+}
+.main-experience-block__wrapper ul li {
+  position: relative;
+}
+.main-experience-block__wrapper ul li:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 74px;
+  top: 45px;
+  left: -33px;
+  background-color: #222424;
+}
+.main-experience-block__wrapper ul li:after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% + 29px);
+  top: -29px;
+  left: -33px;
+  background-color: #222424;
+}
+.main-experience-block__item-header {
+  position: relative;
+  padding: 5px 0 0 100px;
+}
+.main-experience-block__item-header h4 {
+  margin-bottom: 0;
+}
+.main-experience-block__item-body {
+  padding-left: 43px;
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #222424;
+}
+.main-experience-block__item-icon {
+  position: absolute;
+  top: 33px;
+  left: 40px;
+}
+.main-experience-block__item-icon:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.main-experience-block__item-icon img {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.main-experience-block__item-degree {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 2px;
+  color: #222424;
+}
+.main-experience-block__education {
+  position: relative;
+  padding-left: 35px;
+}
+.main-experience-block__education:before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #008B8B;
+  border-radius: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .main-experience-block .title-experience {
   position: relative;
   text-align: center;
@@ -347,6 +435,12 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+  color: #222424;
+}
+.title_size14 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
   color: #222424;
 }
 

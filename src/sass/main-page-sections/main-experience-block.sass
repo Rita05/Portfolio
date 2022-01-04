@@ -1,5 +1,76 @@
 .main-experience-block
     padding-top: 120px
+    &__wrapper
+        padding: 60px 65px 0 65px
+        display: grid
+        grid-template-columns: repeat(2, minmax(425px, auto))
+        column-gap: 20px
+        ul
+            list-style-type: none
+            li 
+                position: relative
+                &:before
+                    position: absolute
+                    content: ''
+                    height: 1px
+                    width: 74px
+                    top: 45px
+                    left: -33px
+                    background-color: variables.$title_color
+                &:after
+                    position: absolute
+                    content: ''
+                    width: 1px
+                    height: calc(100% + 29px)
+                    top: -29px
+                    left: -33px
+                    background-color: variables.$title_color
+    
+    &__item
+        &-header
+            position: relative
+            padding: 5px 0 0 100px
+            h4
+                margin-bottom: 0
+        &-body
+            padding-left: 43px
+            margin-top: 12px
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px
+            color: variables.$title_color
+
+        &-icon
+            position: absolute
+            top: 33px
+            left: 40px
+            @include before_circle
+            img
+                position: absolute
+                top: 10px
+                left: 15px
+        &-degree
+            font-weight: 500
+            font-size: 13px
+            line-height: 18px
+            margin-top: 2px
+            color: variables.$title_color
+
+    &__education
+        position: relative
+        padding-left: 35px
+        &:before
+            position: absolute
+            content: ''
+            width: 15px
+            height: 15px
+            background:  variables.$main_color
+            border-radius: 100%
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            
+    
     .title-experience
         position: relative
         text-align: center
