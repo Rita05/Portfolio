@@ -1,7 +1,9 @@
-@import 'base-variables/_variables'
+@use 'base-variables/_variables'
 @import 'base-variables/_mixins'
 @import 'main-page-sections/header-block'
 @import 'main-page-sections/main-content-block'
+@import 'main-page-sections/main-experience-block'
+@import 'main-page-sections/titles'
 
 
 /*новая верстка макета сайта*/
@@ -19,5 +21,7 @@
 .divider
         width: 60px
         height: 3px
-        margin-top: 25px
-        background-color: $main_color
+        margin: 25px auto 0 auto
+        background-color: variables.$main_color
+
+

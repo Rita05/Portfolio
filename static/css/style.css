@@ -215,7 +215,7 @@
 .main-content-block__wrapper {
   display: grid;
   grid-template-columns: 450px 480px;
-  grid-template-rows: minmax(268px, auto) minmax(268px, auto);
+  grid-template-rows: minmax(268px, auto) minmax(245px, auto);
   grid-auto-rows: minmax(268px, auto);
   column-gap: 70px;
   row-gap: 40px;
@@ -225,14 +225,16 @@
 }
 .main-content-block__photo img {
   width: 100%;
-  height: 600px;
+  height: 100%;
+  background: rgba(57, 53, 53, 0.71);
 }
 .main-content-block__about-me .divider {
-  margin-top: 0;
+  margin: 0;
 }
 .main-content-block__skills {
   display: grid;
-  grid-auto-rows: auto;
+  grid-template: repeat(2, minmax(100px, auto))/minmax(260px, auto);
+  grid-auto-rows: 1fr;
   row-gap: 10px;
 }
 .main-content-block__skills-item {
@@ -306,6 +308,48 @@
   color: #222424;
 }
 
+.main-experience-block {
+  padding-top: 120px;
+}
+.main-experience-block .title-experience {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #222424;
+}
+.main-experience-block .title-experience:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.main-experience-block .title-experience:before {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-experience-block .subtitle.my-benefit {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 60px;
+  color: #222424;
+}
+
+.title_size20 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #222424;
+}
+
 /*новая верстка макета сайта*/
  *
  * /*font-family: 'Poppins', sans-serif
@@ -319,7 +363,7 @@
 .divider {
   width: 60px;
   height: 3px;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
   background-color: #008B8B;
 }
 /*# sourceMappingURL=style.css.map */

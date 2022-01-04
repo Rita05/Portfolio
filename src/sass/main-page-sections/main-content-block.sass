@@ -3,7 +3,7 @@
         &__wrapper
             display: grid 
             grid-template-columns: 450px 480px
-            grid-template-rows: minmax(268px, auto) minmax(268px, auto)
+            grid-template-rows: minmax(268px, auto) minmax(245px, auto)
             grid-auto-rows: minmax(268px, auto)
             column-gap: 70px
             row-gap: 40px
@@ -11,26 +11,26 @@
             grid-row: 1/3
             img
                 width: 100%
-                height: 600px 
-                ///padding-top: 12px
+                height: 100%///600px 
+                background: rgb(57 53 53 / 71%)
         &__about-me
                 .divider
-                        margin-top: 0
+                        margin: 0
         &__skills
             display: grid
-            ///grid-template-columns: minmax(115px, auto)
-            grid-auto-rows: auto
+            grid-template: repeat(2, minmax(100px, auto))/minmax(260px, auto)
+            grid-auto-rows: 1fr
             row-gap: 10px
             &-item
                 display: grid
                 grid-template-columns: 40px 400px
-                column-gap: 20px
+                column-gap: 20px 
             &__web-description
                 margin-top: 6px
                 font-weight: 500
                 font-size: 15px
                 line-height: 18px
-                color: #222424 
+                color: variables.$title_color///#222424 
 
             &__circle-elem
                 position: relative
@@ -43,13 +43,13 @@
                     font-weight: bold
                     font-size: 14px
                     line-height: 21px
-                    color: #222424    
+                    color: variables.$title_color///#222424    
 
         .title.about_me
             font-weight: bold
             font-size: 20px
             line-height: 24px
-            color: #222424
+            color: variables.$title_color///#222424
 
         &__circle-elem       
             position: relative
@@ -61,7 +61,7 @@
             font-weight: bold
             font-size: 36px
             line-height: 60px
-            color: #222424
+            color: variables.$title_color///#222424
 
         &__content-about-me
             margin-top: 20px
