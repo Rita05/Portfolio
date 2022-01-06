@@ -1,0 +1,53 @@
+.main-skills-block
+    padding-top: 120px
+    &__wrapper
+        padding: 60px 10px 0 12px
+        display: grid
+        grid-template-columns: repeat(4, minmax(235px, auto))
+        grid-template-rows: repeat(2, minmax(235px, auto))
+        grid-gap: 13px
+        &__card
+            border: 1px solid #000000
+            box-sizing: border-box
+            &-icon
+              padding-top: 25px
+              padding-left: 25px
+              img
+                width: 35px
+                height: 35px
+            &-title
+              margin-top: 15px
+              padding-left: 20px
+              font-weight: bold
+              font-size: 17px
+              line-height: 21px
+              color: variables.$title_color  
+            &-body
+                padding: 15px 20px 25px 20px
+                font-weight: 500
+                font-size: 15px
+                line-height: 18px
+                color: variables.$title_color
+
+    .title-skills
+        position: relative
+        text-align: center
+        font-weight: bold
+        font-size: 20px
+        line-height: 24px
+        color: variables.$title_color
+        @include before_circle
+        &:before
+            position: absolute
+            content: ''
+            top: -4px
+            left: 50%
+            transform: translateX(-50%)
+
+    .subtitle.my-skills
+        text-align: center
+        font-weight: bold
+        font-size: 36px
+        line-height: 60px
+        color: variables.$title_color
+       

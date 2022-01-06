@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.title_size20 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #222424;
+}
+.title_size14 {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+  color: #222424;
+}
+
 .header-block {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/headerphoto.jpg") no-repeat 50%/cover;
 }
@@ -214,10 +227,10 @@
 }
 .main-content-block__wrapper {
   display: grid;
-  grid-template-columns: 450px 480px;
+  grid-template-columns: 475px 475px;
   grid-template-rows: minmax(268px, auto) minmax(245px, auto);
   grid-auto-rows: minmax(268px, auto);
-  column-gap: 70px;
+  column-gap: 50px;
   row-gap: 40px;
 }
 .main-content-block__photo {
@@ -227,6 +240,7 @@
   width: 100%;
   height: 100%;
   background: rgba(57, 53, 53, 0.71);
+  box-shadow: 10px 5px 5px #C0C0C0;
 }
 .main-content-block__about-me .divider {
   margin: 0;
@@ -431,16 +445,74 @@
   color: #222424;
 }
 
-.title_size20 {
+.main-skills-block {
+  padding-top: 120px;
+}
+.main-skills-block__wrapper {
+  padding: 60px 10px 0 12px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(235px, auto));
+  grid-template-rows: repeat(2, minmax(235px, auto));
+  grid-gap: 13px;
+}
+.main-skills-block__wrapper__card {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.main-skills-block__wrapper__card-icon {
+  padding-top: 25px;
+  padding-left: 25px;
+}
+.main-skills-block__wrapper__card-icon img {
+  width: 35px;
+  height: 35px;
+}
+.main-skills-block__wrapper__card-title {
+  margin-top: 15px;
+  padding-left: 20px;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 21px;
   color: #222424;
 }
-.title_size14 {
-  font-weight: bold;
+.main-skills-block__wrapper__card-body {
+  padding: 15px 20px 25px 20px;
+  font-weight: 500;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 18px;
+  color: #222424;
+}
+.main-skills-block .title-skills {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222424;
+}
+.main-skills-block .title-skills:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.main-skills-block .title-skills:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-skills-block .subtitle.my-skills {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
   color: #222424;
 }
 
