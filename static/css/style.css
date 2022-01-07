@@ -458,6 +458,7 @@
 .main-skills-block__wrapper__card {
   border: 1px solid #000000;
   box-sizing: border-box;
+  box-shadow: 5px 5px 5px #C0C0C0;
 }
 .main-skills-block__wrapper__card-icon {
   padding-top: 25px;
@@ -513,6 +514,204 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 60px;
+  color: #222424;
+}
+
+.main-my-projects-block {
+  padding-top: 120px;
+}
+.main-my-projects-block__wrapper {
+  margin-top: 60px;
+  display: grid;
+  grid-template: repeat(1, 370px)/repeat(2, 495px);
+  grid-auto-rows: 370px;
+  gap: 10px;
+}
+.main-my-projects-block__item {
+  trasition: all 0.6s;
+}
+.main-my-projects-block__item img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 5px #C0C0C0;
+}
+.main-my-projects-block__item img:hover {
+  transform: scale(1.05);
+}
+.main-my-projects-block .title-portfolio {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222424;
+}
+.main-my-projects-block .title-portfolio:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.main-my-projects-block .title-portfolio:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-my-projects-block .subtitle.my-projects {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  color: #222424;
+}
+
+.main-contacts-block {
+  padding: 120px 0 90px 0;
+}
+.main-contacts-block__wrapper {
+  padding: 0 35px 0 35px;
+  display: grid;
+  grid-template-columns: 475px 415px;
+  column-gap: 40px;
+}
+.main-contacts-block__photo img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 10px 5px 5px #C0C0C0;
+}
+.main-contacts-block__my-contacts .divider {
+  margin: 0;
+}
+.main-contacts-block__circle-elem {
+  position: relative;
+  padding: 0 0 0 12px;
+}
+.main-contacts-block__circle-elem:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.main-contacts-block__contacts-social {
+  margin-top: 15px;
+}
+.main-contacts-block__contacts-social img {
+  max-width: 35px;
+}
+.main-contacts-block__link {
+  margin-right: 25px;
+}
+.main-contacts-block__link img {
+  width: 33px;
+  height: 33px;
+}
+.main-contacts-block__contacts-form {
+  margin-top: 20px;
+  display: grid;
+  grid-template: 45px 190px 45px/repeat(2, 190px);
+  column-gap: 25px;
+  row-gap: 30px;
+}
+.main-contacts-block__contacts-form label {
+  display: block;
+  position: absolute;
+  height: 18px;
+  padding: 0 8px;
+  background-color: #FFFFFF;
+  font-size: 12px;
+  margin-bottom: 0;
+  top: -7px;
+  left: 10px;
+}
+.main-contacts-block__contacts-input {
+  position: relative;
+}
+.main-contacts-block__contacts-input input {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: 500;
+}
+.main-contacts-block__textarea {
+  position: relative;
+  grid-column: 1/3;
+}
+.main-contacts-block__textarea textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+.main-contacts-block__contacts-form_btn {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  height: 100%;
+  width: 100%;
+  background: #008B8B;
+  box-shadow: 0px 5px 5px #C0C0C0;
+  text-decoration: none;
+  border: none;
+}
+.main-contacts-block__contacts-form_btn:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+.main-contacts-block__private-policy {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 190px 190px;
+  column-gap: 25px;
+}
+.main-contacts-block__policy {
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+}
+.main-contacts-block__policy input {
+  margin-right: 10px;
+}
+.main-contacts-block .title.my-contacts {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222424;
+}
+.main-contacts-block .subtitle.contact-with-me {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  color: #222424;
+}
+.main-contacts-block .subtitle.communication-methods {
+  margin-top: 17px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222424;
+}
+.main-contacts-block .subtitle.other-data-communication {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
   color: #222424;
 }
 

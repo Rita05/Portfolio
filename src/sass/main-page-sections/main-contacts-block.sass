@@ -1,0 +1,130 @@
+.main-contacts-block
+        padding: 120px 0 90px 0
+        &__wrapper
+            padding: 0 35px 0 35px
+            display: grid 
+            grid-template-columns: 475px 415px
+            ///justify-content: space-between
+            column-gap: 40px
+        &__photo
+            img
+                width: 100%
+                height: 100% 
+                box-shadow: 10px 5px 5px #C0C0C0
+        &__my-contacts
+            .divider
+                    margin: 0
+        
+        &__circle-elem       
+            position: relative
+            padding: 0 0 0 12px
+            @include before_circle
+
+        &__contacts-social
+            margin-top: 15px
+            img  
+                max-width: 35px
+        &__link
+            margin-right: 25px
+            img
+                width: 33px
+                height: 33px
+
+        &__contacts-form
+           margin-top: 20px
+           display: grid
+           grid-template: 45px 190px 45px / repeat(2, 190px)
+           column-gap: 25px
+           ///justify-content: space-between
+           row-gap: 30px
+           label
+                display: block
+                position: absolute
+                height: 18px
+                padding: 0 8px
+                background-color: #FFFFFF
+                font-size: 12px
+                margin-bottom: 0
+                top: -7px
+                left: 10px
+
+        &__contacts-input  
+            position: relative
+            input 
+                width: 100%
+                height: 100%
+                ///padding: 0 20px
+                font-size: 12px
+                font-weight: 500
+            
+        
+        &__textarea
+            position: relative
+            grid-column: 1/3
+            textarea
+                width: 100%
+                ///width: 405px
+                height: 100%
+                resize: none
+                font-size: 12px
+                font-weight: 500
+
+
+        &__contacts-form_btn
+            color: #FFFFFF
+            font-weight: bold
+            font-size: 14px
+            line-height: 21px
+            height: 100%
+            width: 100%
+            background: variables.$main_color 
+            box-shadow: 0px 5px 5px #C0C0C0
+            ///padding: 12px 25px 
+            text-decoration: none
+            border: none
+            &:hover
+                cursor: pointer
+                color: #FFFFFF
+                text-decoration: underline
+                transition: all 0.3s
+
+        &__private-policy
+            grid-column: 1/3
+            display: grid
+            grid-template-columns: 190px 190px
+            column-gap: 25px
+               
+        
+        &__policy
+            font-size: 12px
+            line-height: 14px
+            display: flex
+            align-items: center
+            input
+                margin-right: 10px
+
+        .title.my-contacts
+            font-weight: bold
+            font-size: 16px
+            line-height: 24px
+            color: variables.$title_color
+
+        .subtitle.contact-with-me
+            font-weight: bold
+            font-size: 36px
+            line-height: 60px
+            color: variables.$title_color
+
+        .subtitle.communication-methods
+            margin-top: 17px
+            font-weight: bold
+            font-size: 14px
+            line-height: 21px
+            color: variables.$title_color
+
+        .subtitle.other-data-communication
+            margin-top: 16px
+            font-weight: bold
+            font-size: 14px
+            line-height: 21px
+            color: variables.$title_color

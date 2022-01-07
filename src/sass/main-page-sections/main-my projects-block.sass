@@ -1,0 +1,39 @@
+.main-my-projects-block
+        padding-top: 120px
+        &__wrapper
+            margin-top: 60px
+            display: grid
+            grid-template: repeat(1, 370px) / repeat(2, 495px)
+            grid-auto-rows: 370px
+            gap: 10px
+        &__item
+            trasition: all 0.6s
+            img
+                width: 100%
+                height: 100%
+                box-shadow: 5px 5px 5px #C0C0C0
+                &:hover
+                    transform: scale(1.05)
+                    ///filter: brightness(1.10)
+                    ///filter: saturate(1.10)
+        .title-portfolio
+            position: relative
+            text-align: center
+            font-weight: bold
+            font-size: 16px
+            line-height: 24px
+            color: variables.$title_color
+            @include before_circle
+            &:before 
+                position: absolute
+                content: ''   
+                top: -4px
+                left: 50%
+                transform: translateX(-50%)
+        
+        .subtitle.my-projects
+            text-align: center
+            font-weight: bold
+            font-size: 36px
+            line-height: 60px
+            color: variables.$title_color
