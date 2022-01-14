@@ -11,6 +11,39 @@
   line-height: 21px;
   color: #222424;
 }
+.title__section-title {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222424;
+}
+.title__section-title:before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  z-index: -1;
+  top: -5px;
+  left: 0;
+  background: #008B8B;
+}
+.title__section-title:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title__section-subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+  color: #222424;
+}
 
 .header-block {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/headerphoto.jpg") no-repeat 50%/cover;
@@ -222,10 +255,10 @@
   width: 150px;
 }
 
-.main-content-block {
+.main-profile-block {
   padding-top: 120px;
 }
-.main-content-block__wrapper {
+.main-profile-block__wrapper {
   display: grid;
   grid-template-columns: 475px 475px;
   grid-template-rows: minmax(268px, auto) minmax(245px, auto);
@@ -233,41 +266,42 @@
   column-gap: 50px;
   row-gap: 40px;
 }
-.main-content-block__photo {
+.main-profile-block__photo {
   grid-row: 1/3;
 }
-.main-content-block__photo img {
+.main-profile-block__photo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   background: rgba(57, 53, 53, 0.71);
   box-shadow: 10px 5px 5px #C0C0C0;
 }
-.main-content-block__about-me .divider {
+.main-profile-block__about-me .divider {
   margin: 0;
 }
-.main-content-block__skills {
+.main-profile-block__skills {
   display: grid;
   grid-template: repeat(2, minmax(100px, auto))/minmax(260px, auto);
   grid-auto-rows: 1fr;
   row-gap: 10px;
 }
-.main-content-block__skills-item {
+.main-profile-block__skills-item {
   display: grid;
   grid-template-columns: 40px 400px;
   column-gap: 20px;
 }
-.main-content-block__skills__web-description {
+.main-profile-block__skills__web-description {
   margin-top: 6px;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   color: #222424;
 }
-.main-content-block__skills__circle-elem {
+.main-profile-block__skills__circle-elem {
   position: relative;
   padding: 16px 0 0 16px;
 }
-.main-content-block__skills__circle-elem:before {
+.main-profile-block__skills__circle-elem:before {
   position: absolute;
   content: "";
   width: 36px;
@@ -278,26 +312,26 @@
   left: 0;
   background: #008B8B;
 }
-.main-content-block__skills__circle-elem:before {
+.main-profile-block__skills__circle-elem:before {
   top: 0;
 }
-.main-content-block__skills .title.web-dev {
+.main-profile-block__skills .title.web-dev {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   color: #222424;
 }
-.main-content-block .title.about_me {
+.main-profile-block .title.about_me {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   color: #222424;
 }
-.main-content-block__circle-elem {
+.main-profile-block__circle-elem {
   position: relative;
   padding: 1px 0 0 12px;
 }
-.main-content-block__circle-elem:before {
+.main-profile-block__circle-elem:before {
   position: absolute;
   content: "";
   width: 36px;
@@ -308,16 +342,16 @@
   left: 0;
   background: #008B8B;
 }
-.main-content-block .subtitle.my_name {
+.main-profile-block .subtitle.my_name {
   font-weight: bold;
   font-size: 36px;
   line-height: 60px;
   color: #222424;
 }
-.main-content-block__content-about-me {
+.main-profile-block__content-about-me {
   margin-top: 20px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   color: #222424;
 }
@@ -536,6 +570,7 @@
 .main-my-projects-block__item img {
   width: 100%;
   height: 75%;
+  object-fit: cover;
   box-shadow: 5px 5px 5px #C0C0C0;
 }
 .main-my-projects-block__item img:hover {
@@ -588,6 +623,26 @@
 
 .main-contacts-block {
   padding: 120px 0 90px 0;
+  /*.title-contacts
+  *  position: relative
+  *  text-align: center
+  *  font-weight: bold
+  *  font-size: 16px
+  *  line-height: 24px
+  *  color: variables.$title_color
+  *  @include before_circle
+  *  &:before 
+  *      position: absolute
+  *      content: ''   
+  *      top: -4px
+  *      left: 50%
+  *      transform: translateX(-50%)*/
+  /*.subtitle.contacts-ways        
+  *          text-align: center
+  *          font-weight: bold
+  *          font-size: 36px
+  *          line-height: 60px
+  *          color: variables.$title_color*/        
 }
 .main-contacts-block__wrapper {
   padding: 60px 35px 0 35px;
@@ -598,6 +653,7 @@
 .main-contacts-block__photo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   box-shadow: 10px 5px 5px #C0C0C0;
 }
 .main-contacts-block__my-contacts .divider {
@@ -701,39 +757,6 @@
 }
 .main-contacts-block__policy input {
   margin-right: 10px;
-}
-.main-contacts-block .title-contacts {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #222424;
-}
-.main-contacts-block .title-contacts:before {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  z-index: -1;
-  top: -5px;
-  left: 0;
-  background: #008B8B;
-}
-.main-contacts-block .title-contacts:before {
-  position: absolute;
-  content: "";
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main-contacts-block .subtitle.contacts-ways {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 60px;
-  color: #222424;
 }
 .main-contacts-block .title.my-contacts {
   font-weight: bold;
