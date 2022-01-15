@@ -15,7 +15,7 @@
   position: relative;
   text-align: center;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: #222424;
 }
@@ -358,6 +358,24 @@
 
 .main-experience-block {
   padding-top: 120px;
+  /*.title-experience
+  *  position: relative
+  *  text-align: center
+  *  font-size: 20px
+  *  font-weight: bold
+  *  line-height: 24px
+  *  color: variables.$title_color
+  *  @include before_circle 
+  *  &:before
+  *      top: -4px
+  *      left: 50%
+  *      transform: translateX(-50%)*/
+  /*.subtitle.my-benefit
+  *  text-align: center
+  *  font-size: 36px
+  *  font-weight: bold
+  *  line-height: 60px
+  *  color: variables.$title_color*/
 }
 .main-experience-block__wrapper {
   padding: 60px 65px 0 65px;
@@ -447,40 +465,29 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.main-experience-block .title-experience {
-  position: relative;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 24px;
-  color: #222424;
-}
-.main-experience-block .title-experience:before {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  z-index: -1;
-  top: -5px;
-  left: 0;
-  background: #008B8B;
-}
-.main-experience-block .title-experience:before {
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main-experience-block .subtitle.my-benefit {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 60px;
-  color: #222424;
-}
 
 .main-skills-block {
   padding-top: 120px;
+  /*.title-skills
+  *  position: relative
+  *  text-align: center
+  *  font-weight: bold
+  *  font-size: 20px
+  *  line-height: 24px
+  *  color: variables.$title_color
+  *  @include before_circle
+  *  &:before
+  *      position: absolute
+  *      content: ''
+  *      top: -4px
+  *      left: 50%
+  *      transform: translateX(-50%)*/
+  /*.subtitle.my-skills
+  *  text-align: center
+  *  font-weight: bold
+  *  font-size: 36px
+  *  line-height: 60px
+  *  color: variables.$title_color*/
 }
 .main-skills-block__wrapper {
   padding: 60px 10px 0 12px;
@@ -517,42 +524,29 @@
   line-height: 18px;
   color: #222424;
 }
-.main-skills-block .title-skills {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #222424;
-}
-.main-skills-block .title-skills:before {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  z-index: -1;
-  top: -5px;
-  left: 0;
-  background: #008B8B;
-}
-.main-skills-block .title-skills:before {
-  position: absolute;
-  content: "";
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main-skills-block .subtitle.my-skills {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 60px;
-  color: #222424;
-}
 
 .main-my-projects-block {
   padding-top: 120px;
+  /*.title-portfolio
+  *  position: relative
+  *  text-align: center
+  *  font-weight: bold
+  *  font-size: 16px
+  *  line-height: 24px
+  *  color: variables.$title_color
+  *  @include before_circle
+  *  &:before 
+  *      position: absolute
+  *      content: ''   
+  *      top: -4px
+  *      left: 50%
+  *      transform: translateX(-50%)*/
+  /*.subtitle.my-projects
+  *  text-align: center
+  *  font-weight: bold
+  *  font-size: 36px
+  *  line-height: 60px
+  *  color: variables.$title_color*/
 }
 .main-my-projects-block__wrapper {
   margin-top: 60px;
@@ -586,39 +580,6 @@
   text-decoration: none;
   color: #008B8B;
   font-weight: bold;
-}
-.main-my-projects-block .title-portfolio {
-  position: relative;
-  text-align: center;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #222424;
-}
-.main-my-projects-block .title-portfolio:before {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
-  z-index: -1;
-  top: -5px;
-  left: 0;
-  background: #008B8B;
-}
-.main-my-projects-block .title-portfolio:before {
-  position: absolute;
-  content: "";
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main-my-projects-block .subtitle.my-projects {
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 60px;
-  color: #222424;
 }
 
 .main-contacts-block {
