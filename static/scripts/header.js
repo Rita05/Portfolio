@@ -3,15 +3,15 @@ window.addEventListener('DOMContentLoaded', () => {
     let hamburgerElem = document.querySelector('.hamburger-menu')
     let menuElem = document.querySelector('.menu')
     let closeElem = document.querySelector('.menu__close')
-    let userName = document.querySelector('#name').value
-    let userEmail = document.querySelector('#email').value
     let btnElem = document.querySelector('#btn__send-message')
 
-    async function sendMessage() {
+    async function sendMessage(userName, userEmail, message) {
+
 
         let userData = {
             user: userName,
-            Email: userEmail
+            Email: userEmail,
+            message: message
         }
 
         let response = await fetch('http://localhost:8081/contact', {
@@ -22,7 +22,13 @@ window.addEventListener('DOMContentLoaded', () => {
             body: JSON.stringify(userData)
         })
         let result = await response.json()
-        console.log(result.user)
+
+        alert(`${result.user}, ваше сообщение отправлено, я скоро свяжусь с вами`)
+        
+        document.querySelector('#name').value=''
+        document.querySelector('#email').value=''
+        document.querySelector('#text').value=''
+
     }
 
 
@@ -36,7 +42,25 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     btnElem.addEventListener('click', () => {
-        sendMessage()
+        let userName = document.querySelector('#name').value
+        let userEmail = document.querySelector('#email').value
+        let message= document.querySelector('#text').value
+        let nameInput=document.querySelector('#name')
+        let emailInput=document.querySelector('#email')
+
+        if (userName=='' || userEmail==''){
+            if(userName==''){
+                nameInput.classList.add('invalid')
+            }else{
+                emailInput.classList.add('invalid')
+            }
+            
+        }else{
+            nameInput.classList.remove('invalid')
+            emailInput.classList.remove('invalid')
+            sendMessage(userName, userEmail, message)
+        }
+        
     })
 
 
