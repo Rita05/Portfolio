@@ -674,6 +674,55 @@
   color: #222424;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .socialsidepanel {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header-block .title.title_person {
+    font-size: 17px;
+  }
+  .header-block .title.subtitle_personal-info {
+    width: 300px;
+    line-height: 39px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header-block .title.subtitle_personal-info {
+    font-size: 26px;
+  }
+  .header-block__buttons {
+    margin-top: 20px;
+  }
+
+  .hamburger-menu {
+    right: 20px;
+  }
+
+  .menu__block {
+    width: 250px;
+  }
+}
 /*новая верстка макета сайта*/
  *
  * /*font-family: 'Poppins', sans-serif
