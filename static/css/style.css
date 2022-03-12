@@ -674,18 +674,44 @@
   color: #222424;
 }
 
+@media (max-width: 1439px) {
+  .socialsidepanel {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
 
-  .socialsidepanel {
-    display: none;
+  .main-profile-block__wrapper {
+    grid-template-columns: 465px 465px;
+    column-gap: 30px;
+  }
+  .main-profile-block__skills {
+    grid-template: repeat(2, minmax(95px, auto))/minmax(250px, auto);
+  }
+  .main-profile-block__skills-item {
+    grid-template-columns: 40px 400px;
+    column-gap: 20px;
   }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
+  }
+
+  .main-profile-block__wrapper {
+    grid-template-columns: 310px 380px;
+    grid-auto-rows: minmax(260px, auto);
+    column-gap: 30px;
+  }
+  .main-profile-block__skills-item {
+    grid-template-columns: 40px 320px;
+    column-gap: 20px;
+  }
+  .main-profile-block .subtitle.my_name {
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -701,6 +727,20 @@
     line-height: 39px;
     font-size: 28px;
   }
+
+  .main-profile-block {
+    padding-top: 60px;
+  }
+  .main-profile-block__wrapper {
+    grid-template: 400px auto auto/100%;
+  }
+  .main-profile-block__skills-item {
+    grid-template-columns: 40px 480px;
+    column-gap: 20px;
+  }
+  .main-profile-block__photo {
+    grid-row: unset;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -708,6 +748,9 @@
     padding: 0 10px;
   }
 
+  .header-block {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/headerphoto.jpg") no-repeat 55%/cover;
+  }
   .header-block .title.subtitle_personal-info {
     font-size: 26px;
   }
@@ -721,6 +764,17 @@
 
   .menu__block {
     width: 250px;
+    padding-left: 20px;
+  }
+
+  .main-profile-block__wrapper {
+    grid-template: 340px auto auto/100%;
+  }
+  .main-profile-block__skills {
+    grid-template-columns: 100%;
+  }
+  .main-profile-block .subtitle.my_name {
+    font-size: 24px;
   }
 }
 /*новая верстка макета сайта*/
